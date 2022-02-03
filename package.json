@@ -1,0 +1,27 @@
+{
+  "name": "server",
+  "version": "1.0.0",
+  "description": "This server belongs to matrimonial website.",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app.js"
+  },
+  "keywords": [
+    "Nodejs",
+    "Mongodb",
+    "react"
+  ],
+  "author": "Vikram Pandit",
+  "license": "ISC",
+  "dependencies": {
+    "@material-ui/icons": "^4.11.2",
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^5.13.5",
+    "nodemon": "^2.0.14"
+  }
+}
