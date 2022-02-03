@@ -5,14 +5,12 @@ const bodyParser = require("body-parser");
 const mongoose = require("mongoose");
 const PORT = process.env.PORT || 3000;
 const bcrypt = require("bcryptjs");
-const Username = "Vikram_7_7";
-const Password = "m9cQlhNaEeDjQmg2";
 
 app.use(cors());
 
 const jwt = require("jsonwebtoken");
 const JWT_SECRET =
-  "jhuguiy(*@(*&*(#$8u49579434759847)(!*)(&)(&!$xquyeriuhkj&*(&*#fhgfjkghjhalkhjhfg";
+  "Your JWT secret here";
 
 app.use(bodyParser.json()); // for parsing application/json
 app.use(bodyParser.urlencoded({ extended: true }));
@@ -20,8 +18,7 @@ app.use(bodyParser.urlencoded({ extended: true }));
 require("./Matrimonial");
 const User = mongoose.model("MatrimonialUsers");
 
-const mongoUri =
-  "mongodb+srv://Vikram_7_7:m9cQlhNaEeDjQmg2@cluster0.7xb5m.mongodb.net/myFirstDatabase?retryWrites=true&w=majority";
+const mongoUri = "Your MongoDB url here";
 mongoose.connect(mongoUri, {
   useNewUrlParser: true,
   useUnifiedTopology: true,
